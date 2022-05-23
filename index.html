@@ -11,8 +11,10 @@
         }
         .img {
         border-radius: 15px;
+       
         }
         main {
+            display: inline-block;
             width: 50%;
             margin-left: 25%;
             margin-top: 10%;
@@ -22,21 +24,25 @@
             border-radius: 15px;
         }
         .h1 {
-           
+          
             
         }
     </style>
 </head>
 <body>
     <main>
+        <div style="float: left;">
         <img class="img" src="green-guy.png" alt="green-guy">
-        <div>
-            
-                    <h1 class="h1">Log in</h1>
-                    <p>Hello, friend! I'm Smarttime - task manager you<br> can trust everything with. Let's get in touch!</p>    
-               
+        </div>
+        <div style="float: right;">
+            <h class="h1">hello</h>
+            <p>Hello, friend! I'm Smarttime - task manager you<br> can trust everything. Let's get in touch!</p>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="button" value="Submit">
         </div>
 
     </main>
 </body>
 </html>
+<!-- pagaliau pavyko su struktura-->
