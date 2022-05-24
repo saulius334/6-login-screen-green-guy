@@ -10,8 +10,8 @@
             background-color: #F8D7B5;
         }
         .img {
-        border-radius: 15px;
-       
+            float: left;
+            border-radius: 15px;
         }
         main {
             display: inline-block;
@@ -21,11 +21,45 @@
             background-color: white;
             border: 5px #FEF4E5;
             border-style: solid;
-            border-radius: 15px;
+            border-radius: 20px;
         }
         .h1 {
-          
-            
+            font-size: 60px;
+            font-weight: bold;
+        }
+        input {
+            background-color: gainsboro;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            padding-block: 10px;
+            padding-left: 20px;
+            padding-right: 80px;
+        }
+        .div2 {
+            font-family: Arial, Helvetica, sans-serif;
+            float: right;
+            text-align: center;
+            margin-top: 100px;
+            margin-right: 30px;
+        }
+        .pp {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .submitbutton {
+            font-weight: bold;
+            color: white;
+            background-color: #2B8764;
+            margin-top: 30px;
+            padding-inline: 105px;
+            padding-block: 10px;
+            border-radius: 30px;
+            border:none;
+            cursor: pointer;
+        }
+        .submitbutton:hover {
+            background: #05AF00;
         }
     </style>
 </head>
@@ -34,15 +68,23 @@
         <div style="float: left;">
         <img class="img" src="green-guy.png" alt="green-guy">
         </div>
-        <div style="float: right;">
-            <h class="h1">hello</h>
-            <p>Hello, friend! I'm Smarttime - task manager you<br> can trust everything. Let's get in touch!</p>
-            <input type="text" id="fname" name="fname"><br><br>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="button" value="Submit">
+        <div class="div2">
+            <h class="h1">Log in</h>
+            <p class="pp">Hello, friend! I'm Smarttime - task manager you<br> can trust everything. Let's get in touch!</p>
+            <input style= margin-top:30px; type="text" id="fname" name="fname" placeholder="Username"><br><br>
+            <input type="text" id="lname" name="lname" placeholder="Password"><br>
+            <div>
+            <label style="text-align: left;"><input type="checkbox" name="">Remember Me</label><br>
+            </div>
+            <button class="submitbutton" onclick="alert('Never gonna give you up! Never gonna let you down!')">Let's start!</button><br><br>
+            <span>Don't have an account? <a style="color: #2B8764;" href="#">Sign up</a></span>
         </div>
 
     </main>
 </body>
 </html>
 <!-- pagaliau pavyko su struktura-->
+
+
+
+<button class="submitbutton" onclick="alert('Never gonna give you up! Never gonna let you down!')">Let's start!</button><br><br>
